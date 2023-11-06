@@ -1,0 +1,3 @@
+data-diff[bigquery]
+google-cloud-bigquery
+pandas
