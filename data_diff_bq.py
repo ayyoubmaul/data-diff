@@ -17,13 +17,13 @@ def compare(source_table, target_table, key_cols, extra_columns: Tuple[str, ...]
 
   target = connect_to_table(
       db_conf,
-      table_name=f'{bq_config["dataset"]}.target',
+      table_name=f'{bq_config["dataset"]}.{target_table}',
       key_columns=key_cols
   )
   
   source = connect_to_table(
       db_conf,
-      table_name=f'{bq_config["dataset"]}.source',
+      table_name=f'{bq_config["dataset"]}.{source_table}',
       key_columns=key_cols
   )
   
